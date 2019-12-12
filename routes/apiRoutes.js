@@ -1,17 +1,17 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
+  // Get all the data from inventory
   app.get("/api/inven", function(req, res) {
-    db.Store.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+    db.Store.findAll({}).then(function(dbStore) {
+      res.json(dbStore);
     });
   });
 
   // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  app.post("/api/inven", function(req, res) {
+    db.Store.create(req.body).then(function(dbStore) {
+      res.json(dbStore);
     });
   });
 

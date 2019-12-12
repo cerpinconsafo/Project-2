@@ -6,10 +6,24 @@
 $(document).ready(function() {
   //$("#store_table").DataTable();
 
-  $.get("/api/examples", function(result) {
+  $.get("/api/inven", function(result) {
     console.log(result);
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //reads method to read all the data from Store Database
 // let showAll = function(){

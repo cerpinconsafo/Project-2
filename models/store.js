@@ -1,7 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Store = sequelize.define("Store", {
-    type: DataTypes.STRING,
     name: DataTypes.STRING,
+    type: DataTypes.STRING,
     ppu: DataTypes.DECIMAL(3, 2),
     quantity: DataTypes.INTEGER(4)
   });
