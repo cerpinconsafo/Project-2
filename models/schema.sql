@@ -3,14 +3,14 @@ CREATE database storeDB;
 
 USE storeDB;
 
- CREATE TABLE store_table (
-  id INT NOT NULL AUTO_INCREMENT,
-   type VARCHAR(100) NOT NULL,
-   name VARCHAR(100) NOT NULL,
-   ppu DECIMAL(4,2) NOT NULL, 
-   quantity INT(5) NOT NULL,
-  PRIMARY KEY (id)
- );
+--  CREATE TABLE store_table (
+--   id INT NOT NULL AUTO_INCREMENT,
+--    type VARCHAR(100) NOT NULL,
+--    name VARCHAR(100) NOT NULL,
+--    ppu DECIMAL(4,2) NOT NULL, 
+--    quantity INT(5) NOT NULL,
+--   PRIMARY KEY (id)
+--  );
 
 -- SELECT * FROM store_table;
 

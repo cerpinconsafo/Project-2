@@ -11,10 +11,13 @@
   },
   "license": "ISC",
   "dependencies": {
+    "datatables.net": "^1.10.20",
+    "datatables.net-dt": "^1.10.20",
     "dotenv": "^8.0.0",
+    "ejs": "^3.0.1",
     "express": "^4.17.0",
-    "mysql2": "^1.6.5",
     "express-handlebars": "^3.1.0",
+    "mysql2": "^1.6.5",
     "sequelize": "^5.8.6"
   },
   "devDependencies": {
