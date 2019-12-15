@@ -3,9 +3,11 @@ var express = require("express");
 //var exphbs = require("express-handlebars");
 // var ejs = require('ejs');
 var db = require("./models");
+var MessagingResponse = require('twilio').twiml.MessagingResponse;
 
 var app = express();
 var PORT = process.env.PORT || 3000;
+
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
@@ -27,6 +29,16 @@ var syncOptions = { force: false };
 if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
+
+//twilio message handling
+app.post('/sms', (req, res) => {
+  const twiml = new MessagingResponse();
+
+  twiml.message('The Booboo is a rare and viscious creature.  She sometimes appears seemingly out of nowhere!');
+
+  res.writeHead(200, {'Content-Type': 'text/xml'});
+  res.end(twiml.toString());
+});
 
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
