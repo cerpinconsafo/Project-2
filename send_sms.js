@@ -8,8 +8,8 @@ const client = require('twilio')(accountSid, authToken);
 
 client.messages
   .create({
-     body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
+     body: "Hello, and Welcome to SFC Delivery!  Please type in a [Keyword] to continue with your order. [FAV ORDER],[NEW ORDER], [HELP], [END]",
      from: '+18315851048',
      to: '+19083070331'
    })
-  .then(message => console.log(message.sid));
+  .then(message => console.log("A message has been sent, with ID: " + message.sid));

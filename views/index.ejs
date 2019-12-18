@@ -2,43 +2,40 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
-  <title>SFC Delivery</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+    <title>SFC Delivery</title>
 </head>
 
 <body>
-  <div class="container">
-      <div class="jumbotron">
-            <div class="display-4 mb-5 lead">SFC Delivery MGMT Inventory
+    <div class="container">
+        <div class="jumbotron">
+            <div class="display-4 mb-5 lead">SuperFastConvenience Delivery Inventory MGMT
             </div>
 
-        <div class="d-flex justify-content-center" id="button-nav">
-    
-            <div id="button-div">
-                Select an option to display: 
-            <button type="button" class="btn btn-dark" id="allBtn" value="all">ALL</button>
-            <button type="button" class="btn btn-dark" id="foodBtn" value="food">FOOD</button>
-            <button type="button" class="btn btn-dark" id="drinkBtn" value="drink">DRINK</button>
-            <button type="button" class="btn btn-dark" id="candyBtn" value="candy">CANDY</button>
-            <button type="button" class="btn btn-dark" id="lowBtn" value="low">LOW</button>
-            </div>
 
+            <div class="d-flex justify-content-center" id="button-nav">
+                <div id="button-div">
+                    Select an option to display:
+                    <button type="button" class="btn btn-dark" id="allBtn" value="all">All</button>
+                    <button type="button" class="btn btn-dark" id="foodBtn" value="food">Food</button>
+                    <button type="button" class="btn btn-dark" id="drinkBtn" value="drink">Drink</button>
+                    <button type="button" class="btn btn-dark" id="candyBtn" value="candy">Candy</button>
+                    <button type="button" class="btn btn-dark" id="lowBtn" value="low">Low</button>
+                </div>
+            </div>
         </div>
+        <div id="showTable" class="table table-hover table-striped table-dark">
+        </div>
+
+
+
     </div>
 
-    <!--This is a sample table structure, the mgmt.js script file should dynamically render something similar to this based on wheat buttons are pressed-->
-    <input type="button" onclick="CreateTableFromJSON()" value="Create Table From JSON" />
-    
-    
-    <div id="showData" class="table table-hover table-striped table-dark">
-    
-    </div>
-</div>
 </html>
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/mgmt.js"></script>
-<script src="/js/index.js"></script>s
+<script src="/js/index.js"></script>
