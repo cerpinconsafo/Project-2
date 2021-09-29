@@ -11,7 +11,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "datatables.net": "^1.10.22",
+    "datatables.net": "^1.11.3",
     "datatables.net-dt": "^1.10.20",
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
